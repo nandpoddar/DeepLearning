@@ -28,4 +28,14 @@ Once the data is loaded, reshape train and test data (X matrix)  to flattened ve
 
 A trick when you want to flatten a matrix X of shape (a,b,c,d) to a matrix X_flatten of shape (b ∗∗ c ∗∗ d, a) is to use:
 
-### X_flatten = X.reshape(X.shape[0], -1).T      # X.T is the transpose of X
+### X_flatten = X.reshape(X.shape[0], -1).T           
+
+Note : X.T is the transpose of X
+
+For one example $x^{(i)}$:
+$$z^{(i)} = w^T x^{(i)} + b \tag{1}$$
+$$\hat{y}^{(i)} = a^{(i)} = sigmoid(z^{(i)})\tag{2}$$ 
+$$ \mathcal{L}(a^{(i)}, y^{(i)}) =  - y^{(i)}  \log(a^{(i)}) - (1-y^{(i)} )  \log(1-a^{(i)})\tag{3}$$
+
+The cost is then computed by summing over all training examples:
+$$ J = \frac{1}{m} \sum_{i=1}^m \mathcal{L}(a^{(i)}, y^{(i)})\tag{6}$$
