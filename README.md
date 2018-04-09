@@ -28,4 +28,4 @@ Once the data is loaded, reshape train and test data (X matrix)  to flattened ve
 
 A trick when you want to flatten a matrix X of shape (a,b,c,d) to a matrix X_flatten of shape (b ∗∗ c ∗∗ d, a) is to use:
 
-X_flatten = X.reshape(X.shape[0], -1).T      # X.T is the transpose of X
+### X_flatten = X.reshape(X.shape[0], -1).T      # X.T is the transpose of X
