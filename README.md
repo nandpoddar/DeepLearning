@@ -14,4 +14,6 @@ First, import all packages - used in this exercise
 You will build a simple image-recognition algorithm that can correctly classify pictures as cat or non-cat. Available datasets (data.h5) contains 
 * Train dataset - A training dataset of m_train labled  examples
 * Test dataset - A test dataset of m_test labled examples
-Each image is of shape (num_px, num_px, 3) where 3 is for  RBG channels
+* Each image is of shape (num_px, num_px, 3) where 3 is for  RBG channels
+
+## Loading and cleaning of data
